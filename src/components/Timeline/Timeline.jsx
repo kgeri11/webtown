@@ -5,6 +5,12 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Timeline = () => {
+  /**
+   * Megjegyzés:
+   * -best practice ismeretének hiányában így bootstrappel kicsit kaotikusnak érzem és nem ideális
+   * -valamilyen package használatával sokkal egyszerűbb lett volna, de mivel nem tudtam hogy lehet-e használni inkább maradt ez
+   * -hiányzó szaggatott vonalra nem találtam szép megoldást
+   */
   const [data, setData] = useState([
     {
       id: 1,
