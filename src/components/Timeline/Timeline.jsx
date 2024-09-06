@@ -101,7 +101,7 @@ const Timeline = () => {
               className="d-flex justify-content-start align-items-center link-underline link-underline-opacity-0"
               href="#"
             >
-              <div className="ps-2">view all</div>
+              <div className="ps-2 fw-bold text-capitalize">view all</div>
               <FontAwesomeIcon icon={faArrowLeft} />
             </Card.Link>
           </Card.Body>
@@ -122,7 +122,7 @@ const Timeline = () => {
   return (
     <div className="container py-5">
       <div className="mb-5">
-        <Stack direction="horizontal" gap={3} className="justify-content-between align-items-end px-5">
+        <Stack direction="horizontal" gap={3} className="justify-content-between align-items-end px-2 px-lg-5">
           <div className="d-flex align-items-end">
             <div className={[style.titleVr, 'rounded'].join(' ')}></div>
             <div className="pe-2 mb-0 h2">Financial sector development timeline</div>
@@ -133,14 +133,14 @@ const Timeline = () => {
               'd-inline-flex justify-content-between align-items-end link-underline link-underline-opacity-0'
             ].join(' ')}
           >
-            <div className="ps-2">view all</div>
+            <div className="ps-2 text-capitalize">view all</div>
             <FontAwesomeIcon icon={faArrowLeft} />
           </a>
         </Stack>
         <div className="py-2 py-lg-3 px-5">
           <hr className="my-0" />
         </div>
-        <div className="d-none d-lg-flex justify-content-end align-items-center px-5">
+        <div className="d-none d-lg-flex justify-content-end align-items-center px-2 px-lg-5">
           <Button
             className={[
               style.buttons,

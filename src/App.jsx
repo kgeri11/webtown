@@ -1,8 +1,9 @@
+import { useState } from 'react'
 import { ThemeProvider } from 'react-bootstrap'
 import style from './app.module.scss'
 import Masonry from './components/masonry'
 import Timeline from './components/timeline'
-import { useState } from 'react'
+import '@fontsource-variable/roboto-condensed'
 
 function App() {
   const [isRtl, setIsRtl] = useState(true)
