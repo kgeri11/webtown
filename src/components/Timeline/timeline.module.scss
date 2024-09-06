@@ -1,0 +1,44 @@
+.titleVr {
+  background-color: #0254a7;
+  width: 6px;
+  height: 56px;
+}
+
+.line {
+  border-top: 1px dashed var(--bs-gray-400);
+  position: absolute;
+  width: 100%;
+  bottom: 14px;
+  right: 198px;
+}
+
+.text {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.buttons {
+  width: 44px;
+  height: 20px;
+}
+
+.timeline {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  transition: all 250ms linear;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
